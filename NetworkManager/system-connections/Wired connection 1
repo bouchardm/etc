@@ -1,0 +1,14 @@
+
+[connection]
+id=Wired connection 1
+uuid=add61737-5e26-4cbc-8c86-ddb0fd813bc7
+type=802-3-ethernet
+
+[802-3-ethernet]
+
+[ipv4]
+method=auto
+
+[ipv6]
+method=auto
+ip6-privacy=2
