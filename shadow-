@@ -36,3 +36,4 @@ hplip:*:16518:0:99999:7:::
 marcabm:$6$HptvYYT1$pcPk7zI1DkU4faQAe5AYtpbSvs4dG4RJ3zIyCxj1OB1RDIX6XAPd2tIKIZJuYnyoMeCvaqeuojjDfFX1fl/9e0:16518:0:99999:7:::
 guest-Ik2GXG:*:16518:0:99999:7:::
 mysql:!:16518:0:99999:7:::
+statd:*:16518:0:99999:7:::

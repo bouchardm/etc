@@ -35,4 +35,5 @@ speech-dispatcher:x:115:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/
 hplip:x:116:7:HPLIP system user,,,:/var/run/hplip:/bin/false
 marcabm:x:1000:1000:Marc-Antoine Bouchard Marceau,,,:/home/marcabm:/bin/bash
 guest-Ik2GXG:x:117:125:Guest,,,:/tmp/guest-Ik2GXG:/bin/bash
-mysql:x:118:126::/nonexistent:/bin/false
+mysql:x:118:126:MySQL Server,,,:/nonexistent:/bin/false
+statd:x:119:65534::/var/lib/nfs:/bin/false
