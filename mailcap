@@ -48,6 +48,18 @@ application/vnd.sun.xml.math; soffice --nologo --math '%s'; edit=soffice --nolog
 application/vnd.sun.xml.writer; soffice --nologo --writer '%s'; edit=soffice --nologo --writer '%s'; description="OpenOffice.org Text Document"; nametemplate=%s.sxw
 application/vnd.sun.xml.writer.global; soffice --nologo --global '%s'; edit=soffice --nologo --writer '%s'; description="OpenOffice.org Master Document"; nametemplate=%s.sxg
 application/vnd.sun.xml.writer.template; soffice --nologo --writer '%s'; edit=soffice --nologo --writer '%s'; description="OpenOffice.org Text Document Template"; nametemplate=%s.stw
+video/mpeg; vlc '%s'; description="MPEG Video"; test=test -n "$DISPLAY"
+video/x-mpeg; vlc '%s'; description="MPEG Video"; test=test -n "$DISPLAY"
+video/mpeg-system; vlc '%s'; description="MPEG Video"; test=test -n "$DISPLAY"
+video/x-mpeg-system; vlc '%s'; description="MPEG Video"; test=test -n "$DISPLAY"
+audio/x-wav; vlc '%s'; description="WAV Audio"; nametemplate=%s.wav; test=test -n "$DISPLAY"
+video/mpeg4; vlc '%s'; description="MPEG-4 Video"; test=test -n "$DISPLAY"
+audio/mpeg; vlc '%s'; description="MPEG Audio"; nametemplate=%s.mpg; test=test -n "$DISPLAY"
+audio/mpegurl; vlc '%s'; description="MPEG Audio URL"; nametemplate=%s.m3u; test=test -n "$DISPLAY"
+audio/x-mp3; vlc '%s'; nametemplate=%s.mp3; description="MPEG Audio"; test=test -n "$DISPLAY"
+audio/mpeg4; vlc '%s'; description="MPEG-4 Audio"; test=test -n "$DISPLAY"
+application/mpeg4-iod; vlc '%s'; description="MPEG-4 Video"; test=test -n "$DISPLAY"
+application/mpeg4-muxcodetable; vlc '%s'; description="MPEG-4 Video"; test=test -n "$DISPLAY"
 text/html; /usr/bin/sensible-browser '%s'; description=HTML Text; nametemplate=%s.html
 application/pdf; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.pdf
 application/x-troff-man; /usr/bin/nroff -mandoc -Tutf8; copiousoutput; print=/usr/bin/nroff -mandoc -Tutf8 | print text/plain:-
@@ -459,6 +471,25 @@ x-scheme-handler/help; yelp %s; test=test -n "$DISPLAY"
 x-scheme-handler/info; yelp %s; test=test -n "$DISPLAY"
 x-scheme-handler/man; yelp %s; test=test -n "$DISPLAY"
 text/plain; view '%s'; edit=vim '%s'; compose=vim '%s'; test=test -x /usr/bin/vim; needsterminal
+video/mpeg; vlc -I rc -V caca '%s'; needsterminal; description="MPEG Video"
+video/x-mpeg; vlc -I rc -V caca '%s'; needsterminal; description="MPEG Video"
+video/mpeg-system; vlc -I rc -V caca '%s'; needsterminal; description="MPEG Video"
+video/x-mpeg-system; vlc -I rc -V caca '%s'; needsterminal; description="MPEG Video"
+audio/x-wav; vlc -I rc -V caca '%s'; nametemplate=%s.wav; needsterminal; description="WAV Audio"
+video/mpeg4; vlc -I rc -V caca '%s'; needsterminal; description="MPEG-4 Video"
+audio/mpeg; vlc -I rc -V caca '%s'; nametemplate=%s.mpg; needsterminal; description="MPEG Audio"
+audio/mpegurl; vlc -I rc -V caca '%s'; nametemplate=%s.m3u; needsterminal; description="MPEG Audio URL"
+audio/x-mp3; vlc -I rc -V caca '%s'; nametemplate=%s.mp3; needsterminal; description="MPEG Audio"
+audio/mpeg4; vlc -I rc -V caca '%s'; needsterminal; description="MPEG-4 Audio"
+application/mpeg4-iod; vlc -I rc -V caca '%s'; needsterminal; description="MPEG-4 Video"
+application/mpeg4-muxcodetable; vlc -I rc -V caca '%s'; needsterminal; description="MPEG-4 Video"
+video/x-msvideo; vlc '%s'; description="MS Video (AVI)"; test=test -n "$DISPLAY"
+video/quicktime; vlc '%s'; description="Apple Quicktime Video"; test=test -n "$DISPLAY"
+application/ogg; vlc '%s'; nametemplate=%s.ogg; description="Ogg stream"; test=test -n "$DISPLAY"
+application/x-ogg; vlc '%s'; nametemplate=%s.ogg; description="Ogg stream"; test=test -n "$DISPLAY"
+video/ogg; vlc '%s'; description="Ogg Video"; test=test -n "$DISPLAY"
+application/x-ms-asf-plugin; vlc '%s'; description="Windows Media Video"; test=test -n "$DISPLAY"
+application/x-mplayer2; vlc '%s'; description="Windows Media"; test=test -n "$DISPLAY"
 text/csv; soffice --nologo --calc '%s'; edit=soffice --nologo --calc '%s'; test=test -n "$DISPLAY"; description="CSV Document"; nametemplate=%s.csv
 text/spreadsheet; soffice --nologo --calc '%s'; edit=soffice --nologo --calc '%s'; test=test -n "$DISPLAY"; description="Spreadsheet Interchange Document"; nametemplate=%s.slk
 application/x-quattropro; soffice --nologo --calc '%s'; edit=soffice --nologo --calc '%s'; test=test -n "$DISPLAY"; description="Quattro Pro 6 for Windows Spreadsheet"; nametemplate=%s.wb2
@@ -488,6 +519,13 @@ application/vnd.openxmlformats-officedocument.wordprocessingml.template; soffice
 application/msword; soffice --nologo --writer '%s'; edit=soffice --nologo --writer '%s'; test=test -n "$DISPLAY"; description="Microsoft Word Document"; nametemplate=%s.doc
 application/vnd.ms-works; soffice --nologo --writer '%s'; edit=soffice --nologo --writer '%s'; test=test -n "$DISPLAY"; description="Microsoft Works Document"; nametemplate=%s.wps
 text/plain; view '%s'; edit=vi '%s'; compose=vi '%s'; needsterminal
+video/x-msvideo; vlc -I rc -V caca '%s'; needsterminal; description="MS Video (AVI)"
+video/quicktime; vlc -I rc -V caca '%s'; needsterminal; description="Apple Quicktime Video"
+application/ogg; vlc -I rc -V caca '%s'; nametemplate=%s.ogg; needsterminal; description="Ogg stream"
+application/x-ogg; vlc -I rc -V caca '%s'; nametemplate=%s.ogg; needsterminal; description="Ogg stream"
+video/ogg; vlc -I rc -V caca '%s'; needsterminal; description="Ogg Video"
+application/x-ms-asf-plugin; vlc -I rc -V caca '%s'; needsterminal; description="Windows Media Video"
+application/x-mplayer2; vlc -I rc -V caca '%s'; needsterminal; description="Windows Media"
 text/*; less '%s'; needsterminal
 text/*; view '%s'; edit=vim '%s'; compose=vim '%s'; test=test -x /usr/bin/vim; needsterminal
 application/x-info; /usr/bin/info --subnodes -o /dev/stdout -f '%s' 2>/dev/null; copiousoutput; description=GNU Info document
