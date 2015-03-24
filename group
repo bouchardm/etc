@@ -64,3 +64,4 @@ marcabm:x:1000:
 sambashare:x:124:marcabm
 guest-Ik2GXG:x:125:
 mysql:x:126:
+vboxusers:x:127:
