@@ -8,7 +8,3 @@
 # /srv/nfs4        gss/krb5i(rw,sync,fsid=0,crossmnt,no_subtree_check)
 # /srv/nfs4/homes  gss/krb5i(rw,sync,no_subtree_check)
 #
-# VAGRANT-BEGIN: 1000 43f76ddf-fe16-41cf-99ef-f9e14104dd73
-"/home/marcabm/code/saaq/site" 192.168.255.11(rw,no_subtree_check,all_squash,anonuid=1000,anongid=1000,fsid=74897436)
-"/home/marcabm/code/saaq/doc" 192.168.255.11(rw,no_subtree_check,all_squash,anonuid=1000,anongid=1000,fsid=1853156977)
-# VAGRANT-END: 1000 43f76ddf-fe16-41cf-99ef-f9e14104dd73
