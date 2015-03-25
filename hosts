@@ -6,7 +6,7 @@
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 
-
+# SAAQ
 192.168.255.11   saaq.local
 192.168.255.11   tools-saaq.local
 192.168.255.11   doc-saaq.local
@@ -16,3 +16,6 @@ ff02::2 ip6-allrouters
 192.168.255.11   microsite_attachez-vous-saaq.local
 192.168.255.11   microsite_halloween-saaq.local
 192.168.255.11   microsite_vie-par-la-fin-saaq.local
+
+# GENIUS CRM
+44.44.44.44 genius.local.libeo.com
