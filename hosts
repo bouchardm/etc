@@ -11,6 +11,7 @@ ff02::2 ip6-allrouters
 192.168.255.11   tools-saaq.local
 192.168.255.11   doc-saaq.local
 
+192.168.255.11   application_testdeconnaissances-saaq.local
 192.168.255.11   microsite_le-pouvoir-de-tout-changer-saaq.local
 192.168.255.11   microsite_ralentir-comment-le-dire-saaq.local
 192.168.255.11   microsite_attachez-vous-saaq.local
