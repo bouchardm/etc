@@ -20,3 +20,6 @@ ff02::2 ip6-allrouters
 
 # GENIUS CRM
 44.44.44.44 genius.local.libeo.com
+
+# CSQ
+192.168.10.10  annuaire.accescsq.local
