@@ -23,3 +23,4 @@ ff02::2 ip6-allrouters
 
 # CSQ
 192.168.10.10   annuaire.accescsq.local
+192.168.10.10   demande.accescsq.local
