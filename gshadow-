@@ -64,3 +64,4 @@ marcabm:!::
 sambashare:!::marcabm
 mysql:!::
 vboxusers:!::marcabm
+docker:!::
